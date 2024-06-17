@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<script src="js/bootstrap.bundle.min.js"></script>
+<nav class="navbar new-navbar fixed-top">
+  <!-- Social Icons -->
+  <ul class="social-icons">
+      <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+      <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+      <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+  </ul>
+  <!-- Search Bar -->
+  <input type="text" class="search-bar" placeholder="Search Artwork or Artist">
+  <!-- Login Button -->
+  <a type="" class="btn btn-primary btn-login">Login</a>
+  <!-- Cart Icon -->
+  <a (click)="navigateTo('cart')" class="cart-icon"><i class="bi bi-cart3"></i></a>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top existing-navbar shadow-lg">
+  <div class="container" style="padding-left: 15px; padding-right: 15px;">
+      <a class="navbar-brand"  routerLink="/admin/login"><span class="text-warning"><img src="assets/images/logo4.png" width="180px" height="120px"></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="navbarDropdownArtwork" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Artwork
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownArtwork">
+                    <li><a class="nav-link" routerLink="/painting">paintings</a>
+                    </li> 
+                    <li><a class="nav-link" routerLink="/sculpture">Sculpture</a></li>
+               
+                    <!-- Add more dropdown items as needed -->
+                </ul>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" routerLink="/artist">Artist</a>
+                                                        </li> 
+                                                        <li class="nav-item">
+                                                          <a class="nav-link"  routerLink="/about">About</a>
+                                                        </li> 
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" routerLink="/contact">Contact</a>
+                                                        </li>    
+                                                        <li class="nav-item">
+                                                          <a *ngIf="true" class="nav-link" href="#">My Dashboard</a>
+                                                        </li>        
+                                                    </ul>
+      </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

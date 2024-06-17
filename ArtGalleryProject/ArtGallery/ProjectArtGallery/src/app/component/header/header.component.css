@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background: #e9f1f5;
+}
+body.p{
+	font-size: 18px;
+}
+.section-padding {
+	padding: 100px 0;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+.navbar .getstarted {
+	background: #106eea;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+	
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+	
+}
+
+.portfolio .card {
+
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.team .card {
+	
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.card {
+    position:relative;
+    overflow: hidden;
+  }
+  .card-img-top {
+    transition: transform 0.5s ease;
+  }
+  .card:hover .card-img-top {
+    transform: scale(1.1);
+  }
+  
+  .card:hover .card-overlay {
+    opacity: 1; /* Fade in overlay on hover */
+  }
+  
+  .overlay-content text mt-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-align:inherits;
+   
+  }
+  /*==
+  .overlay-content button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	
+  }==*/
+  .btn-overlay {
+	margin-top: 10px; /* Adjust as needed */
+  }
+  
+
+
+
+.team .card-body i {
+	font-size: 20px;
+
+}
+
+ 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
+.about-img{
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.custom-shadow {
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  }
+  .new-navbar {
+	background-color: #0c0c0c;
+	color: white;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000; /* Ensure it's above the existing navbar */
+}
+.new-navbar .container {
+	display: flex;
+	align-items: center;
+}
+.new-navbar .nav-link {
+	color: white;
+}
+.new-navbar .social-icons {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+.new-navbar .social-icons li {
+	margin-right: 10px;
+	
+}
+.new-navbar .cart-icon, .new-navbar .search-bar, .new-navbar .btn-login {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.btn-login{
+	background-color: #c1eaf6;
+	padding: .25rem .75rem;
+	-webkit-text-fill-color: #000;
+}
+.new-navbar .search-bar {
+	width: 250px;
+	padding: 2px 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	color: #495057;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.new-navbar .search-bar:focus {
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Override icon color to white */
+.new-navbar .bi {
+	color: white;
+}
+/* Adjust existing navbar position */
+.existing-navbar {
+	margin-top: 50px; /* Height of the new navbar */
+
+}
+.existing-navbar img {
+	margin-left: 60px; /* Height of the new navbar */
+
+}
+
+
+/* Add animation on hover to social icons */
+.new-navbar .social-icons li:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Add animation on hover to cart icon */
+.new-navbar .cart-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Add animation on hover to login button */
+.new-navbar .btn-login:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Add animation on hover to search bar */
+.new-navbar .search-bar:hover {
+    border-color: #dde0e4;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Navbar hover animation */
+.existing-navbar .nav-item .nav-link:hover {
+    color: #49ceec; /* Change text color on hover */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Navbar active link */
+.existing-navbar .nav-item .nav-link.active {
+    color: #49ceec; /* Change text color for active link */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+}
+
+.wrapper{
+    padding: 10px 10%;
+}
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+	
+}
+.box {
+	
+	border-radius: 10px;
+	position:relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay {
+	width: 100%;
+	height: 0;
+	background: linear-gradient(transparent,#332f2f 58%);
+	border-radius: 10px;
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align:start;
+	-webkit-text-fill-color: white;
+	font-size: 14px;
+	transition: height 0.5s;
+	
+}
+.overlay h3 {
+	font-weight: 500;
+	margin-bottom: 20px;
+	margin-top: 50%;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.overlay a {
+	margin-top: 10px;
+	color: #100f0f;
+	text-decoration: none;
+	font-size: 14px;
+	background: #fefcfc;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+
+
+
+
+
+

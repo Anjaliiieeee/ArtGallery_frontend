@@ -1,0 +1,9 @@
+<p>Search Artist<details></details></p>
+
+<div *ngIf="artist">
+
+    <td>{{ artist.artistName }}</td>
+    <td>{{ artist.artistBio }}</td>
+    <img *ngIf="artist.image" [src]="'data:image/jpeg;base64,' + artist.image" alt="{{ artist.artistName }}">
+
+</div>

@@ -1,0 +1,68 @@
+/* Top Navigation Bar */
+.navbar {
+    margin-top: 11%;
+    margin-bottom: 2%;
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #495057;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+}
+
+.sidebar .nav-link.active {
+    background-color: #495057;
+}
+
+/* Main Content */
+.content {
+    
+    margin-left: 250px;
+    padding: 5px;
+}
+
+/* Example Widgets */
+.card {
+    background-color: #636364;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.container-fluid {
+    
+    padding: 20px;
+}
+

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let artwork of artworks">
+            <div class="card">
+                <img class="card-img-top" [src]="'data:image/jpeg;base64,' + artwork.image" alt="Artwork Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ artwork.artworkTitle }}</h5>
+                    <p class="card-text">Price: {{ artwork.price }}</p>
+                    <p class="card-text">Year: {{ artwork.year }}</p>
+                    <button class="btn btn-primary btn-buy-now">Buy Now</button>
+                    <button class="btn btn-success btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

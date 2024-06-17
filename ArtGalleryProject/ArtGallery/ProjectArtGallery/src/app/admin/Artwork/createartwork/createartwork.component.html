@@ -1,0 +1,24 @@
+<div>
+    <h2>Create New Artwork</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="artworkTitle">Title:</label>
+        <input type="text" id="artworkTitle" name="artworkTitle" [(ngModel)]="artwork.artworkTitle">
+      </div>
+      <div>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" [(ngModel)]="artwork.price">
+      </div>
+      <div>
+        <label for="price">Year:</label>
+        <input type="number" id="year" name="year" [(ngModel)]="artwork.year">
+      </div>
+      
+      <div>
+        <label for="image">Image:</label>
+        <input type="file" id="image" (change)="onFileSelected($event)">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

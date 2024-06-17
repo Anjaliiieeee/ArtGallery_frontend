@@ -1,0 +1,10 @@
+<p>Search Artwork <details></details></p>
+
+<div *ngIf="artwork">
+
+    <td>{{ artwork.artworkTitle }}</td>
+      <td>{{ artwork.price }}</td>
+      <td>{{ artwork.year }}</td>
+      <td><img [src]="'data:image/jpeg;base64,' + artwork.image" alt="{{ artwork.artworkTitle }}" /></td>
+
+</div>

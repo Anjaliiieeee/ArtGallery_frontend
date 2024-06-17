@@ -1,0 +1,132 @@
+<div>
+    <h2>Artist List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Bio</th>
+          <th>Image</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let artist of artists">
+          <td>{{ artist.artistName }}</td>
+          <td>{{ artist.artistBio }}</td>
+          <td>
+            <img *ngIf="artist.image" [src]="'data:image/jpeg;base64,' + artist.image" alt="{{ artist.artistName }}">
+            <div *ngIf="!artist.image">No image available</div>
+          </td>
+          <td>
+
+            <button (click)="deleteArtist(artist.artistId)">Delete</button>
+            <button (click)="findArtist(artist.artistId)">Search</button>
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div *ngIf="artists && !artists.length">
+      <p>No artists found.</p>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+    <h2>Artist List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Bio</th>
+          <th>Image</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let artist of artists">
+            <td>{{ artist.artistName }}</td>
+            <td>{{ artist.artistBio }}</td>
+    <td><img [src]="'data:image/jpeg;base64,' + artist.image" alt="{{ artist.artistName }}" /></td>
+    <td>
+        <button (click)="deleteArtwork(artwork.artworkId)">Delete</button>
+
+        <button (click)="findArtwork(artwork.artworkId)">Search</button> -->
+        <!-- <button (click)="updateArtwork(artwork.artworkId)">Update</button> -->
+
+
+      <!-- </td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- <div *ngIf="artworks && !artworks.length">
+  <p>No artworks found.</p>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
